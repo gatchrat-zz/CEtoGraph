@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Data;
 using System.Linq;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
-using System.Windows.Forms.DataVisualization;
-using System.Drawing.Imaging;
+
 
 namespace MyPersonalCheatEngine
 {
@@ -141,7 +138,7 @@ namespace MyPersonalCheatEngine
             byte[] valueOut;
             float heelt = 0;
 
-            Process myProcess = Process.GetProcessesByName("Splasher").FirstOrDefault();
+            Process myProcess = Process.GetProcessesByName(name).FirstOrDefault();
 
 
             Console.WriteLine("Base" + Base);
